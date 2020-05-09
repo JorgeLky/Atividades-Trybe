@@ -1,0 +1,31 @@
+#page {
+    margin:20px;
+}
+
+.main-title {
+    background-color: #f4a261;
+}
+
+.links {
+    background-color: #ffcad4;
+    font-size: 30px;
+    line-height: 50px;
+}
+
+.principal-fact {
+    background-color: #f2cc8f;
+}
+
+span {
+    font-style: italic;
+    color: white;
+    background-color: red;
+}
+
+.table {
+    position: relative;
+    border: 3px solid black;
+    float: right;
+    text-align: center;
+    background-color: lightblue;
+}
