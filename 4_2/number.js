@@ -7,6 +7,12 @@ for (i = 0; i < numbers.length; i++) {
     sum = (sum + numbers[i]);
     media = sum / numbers.length
 }
+
 console.log('a soma é ' + sum)
 console.log('a média é ' + media)
 
+if (media > 20) {
+    console.log("média maior que 20")
+} else {
+    console.log("média menor que 20")
+}
