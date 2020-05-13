@@ -3,6 +3,7 @@ let sum = 0;
 let media = 0;
 let maior = 0;
 let impares = 0;
+let menor = 9999999999;
 
 for (i = 0; i < numbers.length; i++) {
     console.log(numbers[i]);
@@ -32,3 +33,9 @@ for (m = 0; m < numbers.length; m++) {
 }
 console.log("existem " + impares + " números ímpares");
 
+for (i1 in numbers) {
+    if (menor > numbers[i1]) {
+        menor = numbers[i1];
+    }
+}
+console.log("o menor número é " + menor);
