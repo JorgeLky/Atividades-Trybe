@@ -33,7 +33,7 @@
     <h1 class="title">Exercício 4.4 - JavaEscripito </h1>
     <div class="main-content">
       <div class="center-content">
-        <p>Texto padrão do nosso site</p>
+        <p id="upper">Texto padrão do nosso site</p>
         <p id="primeiroParagrafo">-----</p>
         <p>Trybe</p>
       </div>
@@ -73,12 +73,20 @@
             firstTitle = document.querySelector("h1.title").innerHTML = "Exercício 4.5 - JavaScrpt :D"
         }
 
+        function exercise5() {
+            let upper = document.getElementsByTagName("p");
+            for (i = 0;i < upper.length; i++){
+            upper[i].style.textTransform = "uppercase"
+            }
+        }
+
 
 
        exercise1 ()
        exercise2 ()
        exercise3 ()
        exercise4 ()
+       exercise5 ()
     </script>
   </body>
 </html>
