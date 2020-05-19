@@ -63,13 +63,19 @@
 
       //exercise 2
       let firstDiv = document.createElement("div");
-      firsDiv.className = "main-content";
+      firstDiv.className = "main-content";
       document.body.appendChild(firstDiv);
 
       //exercise 3
       let secondDiv = document.createElement("div");
       secondDiv.className = "center-content"
-      document.body.appendChild(secondDiv);
+      document.getElementsByClassName("main-content")[0].appendChild(secondDiv);
+
+      //exercise 4
+      let firstParagraph = document.createElement("p");
+      firstParagraph.innerHTML = "Primeiro Título";
+      document.getElementsByClassName("center-content")[0].appendChild(firstParagraph);
+
     </script>
   </body>
 </html>
