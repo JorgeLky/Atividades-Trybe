@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width" />
+    <title>Exercício 4.5 :D</title>
+
+    <style>
+      div {
+        border-color: black;
+        border-style: solid;
+      }
+      .title {
+        text-align: center;
+      }
+
+      .main-content {
+        background-color: yellow;
+      }
+
+      .main-content .center-content {
+        background-color: red;
+        width: 50%;
+        margin: 0 auto;
+      }
+
+      .main-content .center-content p {
+        font-style: italic;
+      }
+    </style>
+  </head>
+  <body>
+    <h1 class="title">Exercício 4.4 - JavaEscripito </h1>
+    <div class="main-content">
+      <div class="center-content">
+        <p id="upper">Texto padrão do nosso site</p>
+        <p id="primeiroParagrafo">-----</p>
+        <p>Trybe</p>
+      </div>
+    </div>
+    <script>
+        /*
+        Aqui você vai modificar os elementos já existentes utilizando apenas as funções:
+        - document.getElementById()
+        - document.getElementsByClassName()
+        - document.getElementsByTagName()
+ Crie uma função que mude o texto na tag <p> para uma descrição de como você se vê daqui a 2 anos. (Não gaste tempo pensando no texto e sim realizando o exercício)
+ Crie uma função que mude a cor do quadrado amarelo para o verde da Trybe.
+ Crie uma função que mude a cor do quadrado vermelho para branco.
+ Crie uma função que corrija o texto da tag <h1>.
+ Crie uma função que modifique todo o texto da tag <p> para maiúsculo.
+ Crie uma função que exiba o conteúdo de todas as tags <p> no console.
+        */
+       //Exercise 1
+       function exercise1 () {
+           document.getElementById("primeiroParagrafo").innerHTML = "Me vejo programando e desempenhando um papel exemplar em uma empresa."
+       }
+
+       //Exercise 2
+       function exercise2 () {
+       let mainContent = document.getElementsByClassName("main-content")[0];
+       mainContent.style.backgroundColor = "#0fa36b";
+       }
+
+       //Exercise 3
+       function exercise3 () {
+           let center = document.querySelector("div.center-content");
+           center.style.backgroundColor = "white";
+       }
+
+        //Exercise 4
+        function exercise4 ( ){
+            firstTitle = document.querySelector("h1.title").innerHTML = "Exercício 4.5 - JavaScrpt :D"
+        }
+
+        function exercise5() {
+            let upper = document.getElementsByTagName("p");
+            for (i = 0;i < upper.length; i++){
+            upper[i].style.textTransform = "uppercase"
+            }
+        }
+        
+        //Exercise 6
+        function exercise6 () {
+        let print = document.getElementsByTagName("p");
+        for (i = 0; i < print.length; i++){
+            console.log(print[i])
+            }
+        }
+
+       exercise1 ()
+       exercise2 ()
+       exercise3 ()
+       exercise4 ()
+       exercise5 ()
+       exercise6 ()
+    </script>
+  </body>
+</html>
