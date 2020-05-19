@@ -77,14 +77,22 @@
       document.getElementsByClassName("center-content")[0].appendChild(firstParagraph);
 
       //exercise 5
-      thirdDiv = document.createElement("div")
+      let thirdDiv = document.createElement("div")
       thirdDiv.className = "left-content";
       document.getElementsByClassName("main-content")[0].appendChild(thirdDiv);
 
       //exercise 6
-      fourthDiv = document.createElement("div");
+      let fourthDiv = document.createElement("div");
       fourthDiv.className = "right-content";
-      document.getElementsByClassName("main-content")[0].appendChild(fourthDiv); 
+      document.getElementsByClassName("main-content")[0].appendChild(fourthDiv);
+
+      //exercise 7
+      let image = document.createElement("img");
+      image.src = "https://picsum.photos/200";
+      image.className = "small-image"
+      document.getElementsByClassName("left-content")[0].appendChild(image);
+      
+      
 
     </script>
   </body>
