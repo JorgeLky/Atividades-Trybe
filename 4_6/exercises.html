@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width" />
+    <title>Exercício 4.5</title>
+    <style>
+      div {
+        border-color: black;
+        border-style: solid;
+      }
+      .title {
+        text-align: center;
+      }
+
+      .main-content {
+        background-color: yellow;
+      }
+
+      .main-content .center-content {
+        background-color: red;
+        width: 50%;
+        margin-left: auto;
+        margin-right: auto;
+      }
+
+      .main-content .center-content p {
+        font-style: italic;
+      }
+
+      .main-content .left-content {
+        background-color: green;
+        width: 60%;
+        margin-left: 0;
+        margin-right: auto;
+      }
+
+      .main-content .left-content .small-image {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        border-radius: 100%;
+      }
+
+      .main-content .right-content {
+        background-color: blue;
+        width: 60%;
+        margin-left: auto;
+        margin-right: 0;
+      }
+
+      .main-content .description {
+        text-align: center;
+      }
+    </style>
+  </head>
+  <body>
+    <script>
+        //exercise 1
+      let firstTitle = document.createElement("h1")
+      firstTitle.innerText = "Exercício 4.5 - JavaScript DOM"
+      document.body.appendChild(firstTitle);
+
+      //exercise 2
+      let firstDiv = document.createElement("div");
+      firstDiv.className = "main-content";
+      document.body.appendChild(firstDiv);
+
+      //exercise 3
+      let secondDiv = document.createElement("div");
+      secondDiv.className = "center-content"
+      document.getElementsByClassName("main-content")[0].appendChild(secondDiv);
+
+      //exercise 4
+      let firstParagraph = document.createElement("p");
+      firstParagraph.innerHTML = "Texto de teste";
+      document.getElementsByClassName("center-content")[0].appendChild(firstParagraph);
+
+      //exercise 5
+      let thirdDiv = document.createElement("div")
+      thirdDiv.className = "left-content";
+      document.getElementsByClassName("main-content")[0].appendChild(thirdDiv);
+
+      //exercise 6
+      let fourthDiv = document.createElement("div");
+      fourthDiv.className = "right-content";
+      document.getElementsByClassName("main-content")[0].appendChild(fourthDiv);
+
+      //exercise 7
+      let image = document.createElement("img");
+      image.src = "https://picsum.photos/200";
+      image.className = "small-image";
+      document.getElementsByClassName("left-content")[0].appendChild(image);
+
+      //exercise 8
+      let uList = document.createElement("ul")
+      document.getElementsByClassName("left-content")[0].appendChild(uList);
+      let numbers = ["Um", "Dois", "Três", "Quatro", "Cinco", "Seis", "Sete", "Oito", "Nove", "Dez"];
+      for (i = 0; i < numbers.length; i ++){
+          let li = document.createElement("li");
+          document.getElementsByTagName("ul")[0].appendChild(li);
+      }
+      for (j = 0; j < numbers.length; j++){
+        document.getElementsByTagName("li")[j].innerText = numbers[j];
+      }
+
+      //exercise 9
+      let title1 = document.createElement("h3"), title2 = document.createElement("h3"), title3 = document.createElement("h3");
+      document.getElementsByClassName("main-content")[0].appendChild(title1);
+      document.getElementsByClassName("main-content")[0].appendChild(title2);
+      document.getElementsByClassName("main-content")[0].appendChild(title3);
+
+      //exercise 2.1
+      firstTitle.className = "title";
+
+      //exercise 2.2
+      title1.className = "description";
+      title2.className = "description";
+      title3.className = "description";
+
+      //exercise 3.3
+      let rig = document.querySelector(".right-content");
+    rig.style.marginRight = "auto";
+
+      //exercise 3.4
+    center = document.querySelector(".center-content");
+    center.style.backgroundColor = "green";
+
+    //exercise 3.5
+    document.querySelector("ul").childNodes[9].remove();
+    document.querySelector("ul").childNodes[8].remove();
+
+    </script>
+  </body>
+</html>
