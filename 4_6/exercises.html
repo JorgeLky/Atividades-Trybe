@@ -106,11 +106,17 @@
 
       //exercise 9
       let title1 = document.createElement("h3"), title2 = document.createElement("h3"), title3 = document.createElement("h3");
-      document.getElementsByClassName("main-content")[0].appendChild(title1, title2, title3);
+      document.getElementsByClassName("main-content")[0].appendChild(title1);
+      document.getElementsByClassName("main-content")[0].appendChild(title2);
+      document.getElementsByClassName("main-content")[0].appendChild(title3);
 
       //exercise 2.1
-      firstTitle.ClassName = "title";
-      
+      firstTitle.className = "title";
+
+      //exercise 2.2
+      title1.className = "description";
+      title2.className = "description";
+      title3.className = "description";
     </script>
   </body>
 </html>
