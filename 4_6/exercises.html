@@ -89,11 +89,20 @@
       //exercise 7
       let image = document.createElement("img");
       image.src = "https://picsum.photos/200";
-      image.className = "small-image"
+      image.className = "small-image";
       document.getElementsByClassName("left-content")[0].appendChild(image);
-      
-      
 
+      //exercise 8
+      let uList = document.createElement("ul")
+      document.getElementsByClassName("left-content")[0].appendChild(uList);
+      let numbers = ["Um", "Dois", "Três", "Quatro", "Cinco", "Seis", "Sete", "Oito", "Nove", "Dez"];
+      for (i = 0; i < numbers.length; i ++){
+          let li = document.createElement("li");
+          document.getElementsByTagName("ul")[0].appendChild(li);
+      }
+      for (j = 0; j < numbers.length; j++){
+        document.getElementsByTagName("li")[j].innerText = numbers[j];
+      }
     </script>
   </body>
 </html>
