@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset=utf-8 />
+<title>Calculator</title>
+</head>
+<body>
+
+  <label>Square this number:
+    <input type="number" id="square-input" size="2">
+  </label>
+  <button id="square-button">Calculate</button>
+  <br><br>
+  
+  <label>Half this number:
+    <input type="number" id="half-input" size="2">
+  </label>
+  <button id="half-button">Calculate</button>
+  <br><br>
+  
+  <label>
+    Fraction:
+    <input type="number" id="percent1-input" size="2">
+  </label>
+  <label>
+    Whole:
+    <input type="number" id="percent2-input" size="2">
+  </label>
+  <button id="percent-button">Calculate</button>
+  <br><br>
+  
+  <label>Calculate area of circle with radius:
+    <input type="number" id="area-input" size="2">
+  </label>
+  <button id="area-button">Calculate</button> 
+  <br><br>
+  <div id="solution"></div>
+
+  <script>
+      function squareNumber(n) {
+        let result = n**2
+        console.log("o resultado do quadrado do núnero " + n + " é " + result);
+        return(result);
+      }
+      function halfNumber(n) {
+          let result = n/2;
+          console.log("metade de " + n + " é " + result);
+          return(result);
+      }
+      function percentOf (n, m) {
+          let result = m/n * 100;
+          console.log(m + " é " + result  + "% de " + n);
+          return(result)
+      }
+      function areaOfCircle (n) {
+          result = 3.14 * n**2;
+          console.log("a area de um círculo com raio " + n + " é " + result);
+          return(result);
+      }
+      function sumAll(n) {
+        let half = halfNumber(n);
+        let square = squareNumber(half);
+        let area = areaOfCircle(square);
+        sum = percentOf(area, square);
+      }
+      
+let buttonSquare = document.querySelector("#square-button");
+buttonSquare.addEventListener("mouseover", function() {
+  let n = document.querySelector("#square-input");
+  let result = squareNumber(n.value);
+ document.querySelector("#solution").innerHTML ="o quadrado deste número é " + result; 
+})
+
+let buttonHalf = document.querySelector("#half-button");
+buttonHalf.addEventListener("mouseover", function() {
+  let n = document.querySelector("#half-input");
+  let result = halfNumber(n.value);
+  document.querySelector("#solution").innerHTML = "a metade de " + n.value + " é " + result;
+})
+let buttonPercent = document.querySelector("#percent-button");
+buttonPercent.addEventListener("mouseover", function(){
+  let n1 = document.querySelector("#percent1-input");
+  let n2 = document.querySelector("#percent2-input");
+  result = percentOf(n2.value, n1.value);
+  document.querySelector("#solution").innerText = n1.value + " é " + result + "% de " + n2.value
+})
+let circleButton = document.querySelector("#area-button");
+circleButton.addEventListener('mouseover', function(){
+  let n = document.querySelector("#area-input");
+  result = areaOfCircle(n.value);
+  document.querySelector("#solution").innerText = "a área de um círculo com " + n.value + " de raio é " + result;
+})
+
+
+  </script>
+
+  
+</body>
+</html>
