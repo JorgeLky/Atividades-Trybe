@@ -6,7 +6,7 @@
         <link rel="stylesheet" type="text/css" href="style.css">
     </head>
     <body>
-        <fielset>
+        <fieldset>
             <div>
                 <p>Digite seu nome abaixo</p>
                 <input name="Nome" type="text" maxlength="40" required="required">
@@ -26,9 +26,30 @@
                 <p>Cidade</p>
                 <input name="Cidade" type="text" maxlength="28" required="required">
                 <p>Estado</p>
-                <label for="estados"><select name="estados" id = "estados">Selecione seu estado</select></label>
+                <label for="estados"><select name="estados" id = "estados">Selecione seu estado</select></label> <br>
+                <label for='casa'><input type='radio' name="tipo-moradia" id = 'casa'> casa </label>
+                <label for='apto'><input type='radio' name="tipo-moradia" id = 'apto' required > Apartamento </label>
             </div>
-        </fielset>
+        </fieldset>
+        <fieldset>
+            <div>
+                <p>Seu último emprego</p>
+                <p>Resumo</p>
+                <textarea type='text' maxlength="1000"></textarea>
+            </div>
+            <div>
+                <p>Cargo</p>
+                <input type="text" maxlength="40" required/>
+            </div>
+            <div>
+                <p>Descrição do cargo</p>
+                <input type="text" maxlength="500" required>
+            </div>
+            <div>
+                <p>Data de início</p>
+                <input type="date" required>
+            </div>
+        </fieldset>
     </body>
     <script src ="script.js"></script>
 </html>

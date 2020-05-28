@@ -11,5 +11,7 @@ function est(n){
   }
 }
 
+
+
 // acionamento
 est(estados);
