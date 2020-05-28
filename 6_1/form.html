@@ -9,47 +9,49 @@
         <fieldset>
             <div>
                 <p>Digite seu nome abaixo</p>
-                <input name="Nome" type="text" maxlength="40" required="required">
+                <input name="Nome" type="text" maxlength="40" required="required" class="input">
             </div>
             <div>
                 <p>Digite seu E-mail</p>
-                <input name="e-email" type="text" maxlength="50" required="required">
+                <input name="e-email" type="text" maxlength="50" required="required" class="input">
             </div>
             <div>
                 <p>Digite seu cpf</p>
-                <input name="CPF" type="text" maxlength="11" required="required">
+                <input name="CPF" type="text" maxlength="11" required="required" class="input">
             </div>
             <div>
                 <h4>Digite seu endereço</h4>
                 <p>Rua</p>
-                <input name="Endereco" type="text" maxlength="200" required="required">
+                <input name="Endereco" type="text" maxlength="200" required="required" class="input">
                 <p>Cidade</p>
                 <input name="Cidade" type="text" maxlength="28" required="required">
                 <p>Estado</p>
                 <label for="estados"><select name="estados" id = "estados">Selecione seu estado</select></label> <br>
                 <label for='casa'><input type='radio' name="tipo-moradia" id = 'casa'> casa </label>
-                <label for='apto'><input type='radio' name="tipo-moradia" id = 'apto' required > Apartamento </label>
+                <label for='apto'><input type='radio' name="tipo-moradia" id = 'apto' required class="input"> Apartamento </label>
             </div>
         </fieldset>
         <fieldset>
             <div>
                 <p>Seu último emprego</p>
                 <p>Resumo</p>
-                <textarea type='text' maxlength="1000"></textarea>
+                <textarea type='text' maxlength="1000" class="input"></textarea>
             </div>
             <div>
                 <p>Cargo</p>
-                <input type="text" maxlength="40" required/>
+                <input type="text" maxlength="40" required class="input"/>
             </div>
             <div>
                 <p>Descrição do cargo</p>
-                <input type="text" maxlength="500" required>
+                <input type="text" maxlength="500" required class="input">
             </div>
             <div>
                 <p>Data de início</p>
-                <input type="date" required>
+                <input type="date" required class="input">
             </div>
         </fieldset>
+        <button type='button' id ='limpar'>Limpar</button>
+        <button type='button' id = "enviar">Enviar</button>
     </body>
     <script src ="script.js"></script>
 </html>
