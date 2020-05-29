@@ -3,55 +3,57 @@
     <head>
         <meta charset="utf-8">
         <title>Currículo</title>
+        <link rel="stylesheet" type="text/css" href="bootstrap.css">
         <link rel="stylesheet" type="text/css" href="style.css">
     </head>
     <body>
         <fieldset>
-            <div>
-                <p>Digite seu nome abaixo</p>
+            <div class = "form-group">
+                <label>Digite seu nome</label>
                 <input name="Nome" type="text" maxlength="40" required="required" class="input">
             </div>
-            <div>
-                <p>Digite seu E-mail</p>
+            <div class = "form-group">
+                <label>Digite seu E-mail</label>
                 <input name="e-email" type="text" maxlength="50" required="required" class="input">
             </div>
-            <div>
-                <p>Digite seu cpf</p>
+            <div class = "form-group">
+                <label>Digite seu cpf</label>
                 <input name="CPF" type="text" maxlength="11" required="required" class="input">
             </div>
-            <div>
+            <div class = "form-group">
                 <h4>Digite seu endereço</h4>
-                <p>Rua</p>
+                <label>Rua</label>
                 <input name="Endereco" type="text" maxlength="200" required="required" class="input">
-                <p>Cidade</p>
+                <label>Cidade</label>
                 <input name="Cidade" type="text" maxlength="28" required="required">
-                <p>Estado</p>
+                <label>Estado</label>
                 <label for="estados"><select name="estados" id = "estados">Selecione seu estado</select></label> <br>
                 <label for='casa'><input type='radio' name="tipo-moradia" id = 'casa'> casa </label>
                 <label for='apto'><input type='radio' name="tipo-moradia" id = 'apto' required class="input"> Apartamento </label>
             </div>
         </fieldset>
         <fieldset>
-            <div>
+            <div class = "form-group">
                 <p>Seu último emprego</p>
-                <p>Resumo</p>
+                <label>Resumo</label>
                 <textarea type='text' maxlength="1000" class="input"></textarea>
             </div>
-            <div>
-                <p>Cargo</p>
+            <div class = "form-group">
+                <label>Cargo</label>
                 <input type="text" maxlength="40" required class="input"/>
             </div>
-            <div>
-                <p>Descrição do cargo</p>
+            <div class = "form-group">
+                <label>Descrição do cargo</label>>
                 <input type="text" maxlength="500" required class="input">
             </div>
-            <div>
-                <p>Data de início</p>
+            <div class = "form-group">
+                <label>Data de início</label>
                 <input type="date" required class="input">
             </div>
         </fieldset>
         <button type='button' id ='limpar'>Limpar</button>
         <button type='button' id = "enviar">Enviar</button>
     </body>
+    <script src ="datepicX.js"></script>
     <script src ="script.js"></script>
 </html>
