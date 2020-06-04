@@ -89,3 +89,33 @@
            margin-top: 23cm;
       }
   }
+
+@media only screen and (min-width: 240px) {
+
+    #aside{
+        display: none;
+    }
+    body {
+        padding: 0px;
+    }
+    img {
+        width: 200px;
+    }
+    #navigation {
+        float: none;
+        display: flex;
+        flex-direction: column;
+        height: 20%;
+    }
+     
+      #navigation li a {
+        display: block;
+        float: none;
+      }
+
+      #header {
+          position: fixed;
+          width: 80%;
+          margin-top: 0px;
+      }
+}
