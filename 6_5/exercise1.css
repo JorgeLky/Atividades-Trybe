@@ -11,9 +11,9 @@ h2 {
 }
 
 img {
-    max-width: 100%;
-    margin-top: 30px;
-    margin-bottom: 30px;
+  max-width: 100%;
+  margin-top: 30px;
+  margin-bottom: 30px;
 }
 
 figure {
@@ -22,9 +22,9 @@ figure {
 
 @media only screen and (min-width: 1000px) {
     body {
-        background-color: lightblue;
-        font-size: 25px;
-        margin: 10px auto;
+      background-color: lightblue;
+      font-size: 25px;
+      margin: 10px auto;
      }
 
       h1 {
@@ -35,9 +35,9 @@ figure {
       }
       
       .imagens {
-          display: flex;
-          flex-direction: row;
-          flex-wrap: wrap;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
       }
       
       figure {
