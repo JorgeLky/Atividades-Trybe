@@ -1,0 +1,53 @@
+body {
+  font-size: 20px;
+  margin-left: 10px;
+  margin-right: 10px;
+}
+h1 {
+  font-size: 30px;
+}
+h2 {
+
+}
+
+img {
+  max-width: 100%;
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+
+figure {
+	margin: 0;
+}
+
+@media only screen and (min-width: 1000px) {
+    body {
+      background-color: lightblue;
+      font-size: 25px;
+      margin: 10px auto;
+     }
+
+      h1 {
+        font-size: 50px;
+      }
+      h2 {
+        font-size: 30px;
+      }
+      
+      .imagens {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+      }
+      
+      figure {
+          
+      }
+}
+@media only screen and (min-width: 1300px max-width: 2000px) {
+   body {
+       background: lightgreen;
+       font-size: 30px;
+       margin: 10px auto;
+   }   
+}
