@@ -22,7 +22,12 @@ const lesson3 = {
 
 // exercise 1
 
-let AddProp = (a, b, c) => a[b] = c;
+let addProp = (a, b, c) => a[b] = c;
 
-AddProp(lesson2, 'turno', 'manha');
-console.log(lesson2['turno']);
+addProp(lesson2, 'turno', 'manha');
+
+// exercise 2
+
+let keys = (a) => console.log(Object.keys(a));
+console.log(keys(lesson2));
+
