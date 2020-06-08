@@ -30,4 +30,3 @@ addProp(lesson2, 'turno', 'manha');
 
 let keys = (a) => console.log(Object.keys(a));
 console.log(keys(lesson2));
-
