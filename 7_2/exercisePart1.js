@@ -50,3 +50,8 @@ console.log(allLessions);
 
 let allStudents = () => console.log(lesson1.numeroEstudantes + lesson2.numeroEstudantes + lesson3.numeroEstudantes);
 allStudents();
+
+// exercise 7
+
+let selector = (a, b) => console.log(Object.values(a)[b]);
+selector(lesson1, 2);
