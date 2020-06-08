@@ -7,5 +7,3 @@ function factor(m) {
   }
   console.log(result)
 }
-
-factor(num);
