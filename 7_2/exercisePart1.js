@@ -35,3 +35,8 @@ keys(lesson1);
 
 let leng = (a) => console.log(Object.keys(a).length);
 leng(lesson1);
+
+// exercise 4
+
+let values = (a) => console.log(Object.values(a));
+values(lesson1);
