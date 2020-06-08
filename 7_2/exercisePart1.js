@@ -45,3 +45,8 @@ values(lesson1);
 
 let allLessions = Object.assign({}, {lesson1}, {lesson2}, {lesson3});
 console.log(allLessions);
+
+// exercise 6
+
+let allStudents = () => console.log(lesson1.numeroEstudantes + lesson2.numeroEstudantes + lesson3.numeroEstudantes);
+allStudents();
