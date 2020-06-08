@@ -22,7 +22,54 @@ const lesson3 = {
 
 // exercise 1
 
-let AddProp = (a, b, c) => a[b] = c;
+let addProp = (a, b, c) => a[b] = c;
 
-AddProp(lesson2, 'turno', 'manha');
-console.log(lesson2['turno']);
+addProp(lesson2, 'turno', 'manha');
+
+// exercise 2
+
+let keys = (a) => console.log(Object.keys(a));
+keys(lesson1);
+
+// exercise 3
+
+let leng = (a) => console.log(Object.keys(a).length);
+leng(lesson1);
+
+// exercise 4
+
+let values = (a) => console.log(Object.values(a));
+values(lesson1);
+
+// exercise 5
+
+let allLessions = Object.assign({}, {lesson1}, {lesson2}, {lesson3});
+console.log(allLessions);
+
+// exercise 6
+
+let allStudents = () => console.log(lesson1.numeroEstudantes + lesson2.numeroEstudantes + lesson3.numeroEstudantes);
+allStudents();
+
+// exercise 7
+
+let selector = (a, b) => console.log(Object.values(a)[b]);
+selector(lesson1, 2);
+
+// exercise 8
+
+function selectorTrue(a, b, c) {
+  select = 0;
+  for(i = 0; i < Object.keys(a).length; i += 1) {
+    if (Object.keys(a)[i] === b && Object.values(a)[i] === c){
+      select += 1;
+    }
+  }
+  if (select >= 1){
+    console.log(true);
+  } else {
+    console.log(false);
+  }
+}
+
+selectorTrue(lesson1, 'materia', 'Matemática');
