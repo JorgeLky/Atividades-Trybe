@@ -29,4 +29,9 @@ addProp(lesson2, 'turno', 'manha');
 // exercise 2
 
 let keys = (a) => console.log(Object.keys(a));
-console.log(keys(lesson2));
+keys(lesson1);
+
+// exercise 3
+
+let leng = (a) => console.log(Object.keys(a).length);
+leng(lesson1);
