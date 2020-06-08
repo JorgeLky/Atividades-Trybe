@@ -40,3 +40,8 @@ leng(lesson1);
 
 let values = (a) => console.log(Object.values(a));
 values(lesson1);
+
+// exercise 5
+
+let allLessions = Object.assign({}, {lesson1}, {lesson2}, {lesson3});
+console.log(allLessions);
