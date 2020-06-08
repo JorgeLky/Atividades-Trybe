@@ -55,3 +55,21 @@ allStudents();
 
 let selector = (a, b) => console.log(Object.values(a)[b]);
 selector(lesson1, 2);
+
+// exercise 8
+
+function selectorTrue(a, b, c) {
+  select = 0;
+  for(i = 0; i < Object.keys(a).length; i += 1) {
+    if (Object.keys(a)[i] === b && Object.values(a)[i] === c){
+      select += 1;
+    }
+  }
+  if (select >= 1){
+    console.log(true);
+  } else {
+    console.log(false);
+  }
+}
+
+selectorTrue(lesson1, 'materia', 'Matemática');
