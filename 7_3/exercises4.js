@@ -21,3 +21,6 @@ assert.notEqual(myRemove(array, 3), [1, 2, 3, 4]);
 
 // 3
 assert.deepStrictEqual(myRemove(array), array);
+
+// 4
+assert.deepStrictEqual(myRemove(array, 5), array);
