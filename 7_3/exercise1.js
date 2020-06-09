@@ -17,7 +17,7 @@ assert.strictEqual(sum(4, 5), 9, 'please adjust');
 assert.strictEqual(sum(0, 0), 0, 'please adjust');
 
 // 3
-//assert.strictEqual(sum(4, '5'), 9, 'please adjdjust');
+assert.strictEqual(sum(4, '5'), 9, 'please adjdjust');
 
 // 4
 assert.throws(() => { sum(4, '5'), 'parameters must be numbers';});
