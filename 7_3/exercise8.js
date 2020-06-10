@@ -4,4 +4,4 @@ function thereIs() {}
 
 // implemente seus testes aqui
 
-assert.strictEqual(thereIs, function());
+assert.ok(typeof(thereIs) === 'function');
