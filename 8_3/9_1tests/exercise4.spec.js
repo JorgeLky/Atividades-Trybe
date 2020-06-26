@@ -1,5 +1,4 @@
-const assert = require('assert')
-
+const filterPeople = require('../exercise4');
 const people = [
     {
         name: "Nicole",
@@ -28,14 +27,12 @@ const people = [
     }
 ]
 
-// escreva filterPeople abaixo
-filterPeople = () => {
-    return people.filter(({nationality, bornIn}) => (nationality == "Australian" && bornIn < 2000));
-}
-
-
 const filteredPeople = filterPeople(people)
 
-assert.deepEqual(filteredPeople[0], { name: "Nicole", bornIn: 1992, nationality: "Australian" })
-assert.deepEqual(filteredPeople[1], { name: "Toby", bornIn: 1901, nationality: "Australian" })
-    
+//assert.deepEqual(filteredPeople[0], { name: "Nicole", bornIn: 1992, nationality: "Australian" })
+//assert.deepEqual(filteredPeople[1], { name: "Toby", bornIn: 1901, nationality: "Australian" })
+
+test('test Filter People function', () => {
+    expect(filteredPeople[0]).toEqual({ name: 'Nicole', bornIn: 1992, nationality: 'Australian' });
+    expect(filteredPeople[1]).toEqual({ name: 'Toby', bornIn: 1901, nationality: 'Australian' });
+});

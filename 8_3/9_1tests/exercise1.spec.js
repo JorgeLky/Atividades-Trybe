@@ -12,5 +12,3 @@ const rectangles = [rectangle1, rectangle2, rectangle3]
 test('calculate rectangle area', () => {
     expect(rectangleArea(...rectangles)).toBe(rectangles[0]*rectangles[1]);
 });
-
-
