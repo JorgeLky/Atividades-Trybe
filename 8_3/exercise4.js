@@ -1,4 +1,3 @@
-const assert = require('assert')
 
 const people = [
     {
@@ -33,9 +32,5 @@ filterPeople = () => {
     return people.filter(({nationality, bornIn}) => (nationality == "Australian" && bornIn < 2000));
 }
 
-
-const filteredPeople = filterPeople(people)
-
-assert.deepEqual(filteredPeople[0], { name: "Nicole", bornIn: 1992, nationality: "Australian" })
-assert.deepEqual(filteredPeople[1], { name: "Toby", bornIn: 1901, nationality: "Australian" })
+module.exports = filterPeople;
     
