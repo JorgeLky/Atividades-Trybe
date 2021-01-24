@@ -10,6 +10,13 @@ module.exports = {
         pageQuantity: '529',
         createdAt: new Date(),
         updatedAt: new Date()
+      },
+      {
+        title: 'As desventuras de uma jovem qualquer',
+        author: 'Ly',
+        pageQuantity: '736',
+        createdAt: new Date(),
+        updatedAt: new Date()
       }
     ])
   },
