@@ -5,5 +5,3 @@ def soma(n):
         resultado += count
         count += 1
     return resultado
-
-print(soma(5))
