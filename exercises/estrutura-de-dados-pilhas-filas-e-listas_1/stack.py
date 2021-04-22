@@ -1,6 +1,7 @@
 class Stack():
-    def __init__(self):
+    def __init__(self, lim):
         self._data = list()
+        self._lim = lim
 
     def size(self):
         return len(self._data)
@@ -9,6 +10,8 @@ class Stack():
         return not bool(self.size())
 
     def push(self, value):
+        if self.data + 1 > self._lim:
+            return print('não é possível adicionar itens à lista')
         self._data.append(value)
 
     def pop(self):
