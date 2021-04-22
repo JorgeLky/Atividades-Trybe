@@ -43,7 +43,7 @@ class Stack():
 
         return "Stack(" + str_items + ")"
 
-    def min_value(self):
+    def min_value(self): # exercício 1
       min_v = self._data[0]
       for value in self._data:
         if value < min_v:
